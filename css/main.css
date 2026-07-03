@@ -179,4 +179,13 @@ img, svg {
     padding-top: 40px;
     display: flex;
     justify-content:space-between;
+    gap: 10px;
+}
+
+@media(max-width: 768px){
+    .footer__content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
