@@ -41,6 +41,7 @@ img, svg {
 }
 .header__bottom {
     background-image: url(../img/header-bg.png);
+    padding: 15px 0;
 }
 .header__bottom .container {
     display: flex;
@@ -64,6 +65,7 @@ img, svg {
 .menu__list {
     list-style: none;
     display: flex;
+    gap: 10px;
 
 }
 .menu__item {
@@ -106,16 +108,13 @@ img, svg {
     font-size: 64px;
     font-family: "Pixelify Sans", sans-serif;
     font-weight: 709;
+    text-align: center;
 }
 .hero__discription {
     font-size: 32px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* adaptive */
-@media(max-width:1024px) {
-    .header__bottom .container{
-        flex-direction: column;
-    }
 /* ДЗ тут */
     .link-other-page {
         font-size: 18px;
@@ -123,7 +122,6 @@ img, svg {
     .link-other-page__wraper-img{
         min-width: 65px;
     }
-}
 
 .logo-link {
 
@@ -182,10 +180,44 @@ img, svg {
     gap: 10px;
 }
 
+@media(max-width:1040px) {
+    .header__bottom .container{
+        flex-direction: column;
+
+    }
+}
+
 @media(max-width: 768px){
+    .logo-link__wrapper-img{
+        max-width: 350px;
+    }
     .footer__content{
         flex-direction: column;
         align-items: center;
     }
-    
+    .hero__discription{
+    font-size: 20px;
+    }
+
+    .hero{
+        padding: 20px;
+    }
+}
+
+@media(max-width: 425px){
+    .menu__item{
+        min-width: 157px;
+    }
+    .header__top .container{
+        justify-content: space-between;
+        padding: 2px;
+        
+        
+    }
+    .container{
+        padding: 0px;
+    }
+    .link-other-page{
+        flex-direction: column;
+    }
 }
