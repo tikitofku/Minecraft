@@ -229,3 +229,16 @@ https://modrinth.com/mod/lambdynamiclights
 https://modrinth.com/mod/freecam
 https://modrinth.com/mod/fast-ip-ping 
 */
+
+.container {
+
+}
+.mods {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 300px 300px;
+    gap: 10px;
+}
+.mod {
+    background-color: chartreuse;
+}
